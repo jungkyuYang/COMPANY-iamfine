@@ -5,47 +5,23 @@
 이 프로젝트는 **순수 자바스크립트, HTML, CSS**만을 사용하여 인터랙티브 막대 차트 어플리케이션을 구현한 과제입니다.  
 프레임워크(React, Vue 등)나 외부 라이브러리 없이, 기본 웹 기술만으로 모든 기능을 직접 구현하였습니다.
 
----
-
 ## 폴더 및 파일 구조
-
-프로젝트 루트
-├── index.html
-├── index.css
-├── main.js
-├── README.md
-├── eslint.config.js
-├── .gitignore
-├── .prettierrc
+```
 ├── src/
 │ ├── components/
 │ │ ├── Toast/
-│ │ │ ├── Toast.js
-│ │ │ └── Toast.css
 │ │ └── Modal/
-│ │ ├── Modal.js
-│ │ └── Modal.css
 │ ├── css/
-│ │ ├── global.css
-│ │ ├── font.css
-│ │ └── reset.css
 │ ├── layout/
-│ │ ├── Header.js
-│ │ └── Header.css
 │ ├── pages/
 │ │ ├── home/
-│ │ │ ├── index.js
-│ │ │ └── style.css
 │ │ └── notfound/
-│ │ ├── index.js
-│ │ └── style.css
 │ ├── router/
-│ │ └── router.js
 │ └── utils/
-│ └── commonUtils.js
-
+├── index.html
+├── index.css
+└── main.js
 ```
-
 - **index.html** : 앱의 기본 구조와 진입점
 - **index.css** : 전체 스타일 정의
 - **main.js** : 앱 실행 및 초기화
