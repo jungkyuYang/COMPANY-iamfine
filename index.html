@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <link
       rel="icon"
-      type="image/svg+xml"
-      href="/vite.svg" />
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>😊</text></svg>" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"> -->
+    <title>아이엠파인 웹 프론트엔드 면접 과제</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/css/global.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script
-      type="module"
-      src="/src/main.tsx"></script>
+    <div id="header"></div>
+    <div id="modal-root"></div>
+    <div id="toast-root"></div>
+    <div id="app"></div>
+
+    <script src="./src/utils/commonUtils.js"></script>
+    <script src="./src/layout/Header.js"></script>
+    <script src="./src/components/Modal/Modal.js"></script>
+    <script src="./src/components/Toast/Toast.js"></script>
+    <script src="./src/pages/notfound/index.js"></script>
+    <script src="./src/pages/home/index.js"></script>
+    <script src="./src/router/router.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

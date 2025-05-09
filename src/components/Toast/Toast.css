@@ -1,0 +1,40 @@
+/* Toss 스타일 기반 토스트 CSS */
+.toast {
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  min-width: 180px;
+  max-width: 320px;
+  background: #fff;
+  color: #2563eb;
+  padding: 16px 28px;
+  border-radius: 16px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  box-shadow: 0 6px 32px rgba(49, 130, 246, 0.13);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #3182f6;
+  transform: translateX(40px);
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.toast-icon {
+  font-size: 18px;
+  color: #2563eb;
+  margin-right: 6px;
+}

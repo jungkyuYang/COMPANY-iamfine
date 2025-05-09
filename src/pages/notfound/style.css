@@ -1,0 +1,48 @@
+/* 404 Not Found 스타일 */
+.notfound-container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notfound-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(30, 41, 59, 0.09);
+  padding: 48px 36px 40px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 360px;
+}
+.notfound-emoji {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+.notfound-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+.notfound-desc {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.notfound-home-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 10px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+.notfound-home-btn:hover {
+  background: #1742a0;
+}

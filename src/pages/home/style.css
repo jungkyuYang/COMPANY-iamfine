@@ -1,0 +1,421 @@
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+.home-section {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 8px auto 0 auto;
+  box-sizing: border-box;
+  padding: 12px 32px 12px 32px;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px var(--color-main-light);
+  min-height: 600px;
+}
+
+.block {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+.chart-box {
+  background: #f5f5f5;
+  padding: 12px 12px 12px 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  display: block;
+}
+
+.edit-table {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 0.5rem auto;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  background: transparent;
+  table-layout: fixed;
+}
+
+.edit-table th,
+.edit-table td {
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(49, 130, 246, 0.07);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: var(--font-family-main);
+  font-size: 1rem;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 33.33%;
+}
+
+.edit-table th {
+  background: var(--color-main-light);
+  font-weight: 600;
+  color: var(--color-main);
+  border-radius: 8px 8px 0 0;
+}
+
+.edit-table tbody tr {
+  background: none;
+}
+
+.edit-table td:last-child {
+  color: var(--color-danger);
+  cursor: pointer;
+  min-width: 110px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.edit-table .btn {
+  width: 90px;
+  min-width: 90px;
+  padding: 0.5em 0;
+  border-radius: 8px;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #aaa;
+}
+
+.btn {
+  padding: 7px 18px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  background: var(--color-main);
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    box-shadow 0.18s;
+  box-shadow: 0 2px 8px var(--color-main-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--color-main-dark);
+}
+
+.btn-primary {
+  background: var(--color-main);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--color-main-light);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--color-main-dark);
+}
+
+.btn-danger {
+  background: var(--color-danger);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--color-danger-bg);
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background: #b91c1c;
+}
+
+.btn-neutral {
+  background: var(--color-main-light);
+  color: var(--color-text);
+}
+.btn-neutral:hover,
+.btn-neutral:focus {
+  background: #e5e7eb;
+}
+
+/* home.js에서 사용하는 추가 클래스 스타일 */
+.edit-action-row,
+.json-action-row,
+.add-action-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+}
+.add-form-col {
+  display: flex;
+  flex-direction: column;
+}
+.add-form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.add-form-row input[type='number'] {
+  flex: 1 1 0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1.5px solid var(--color-border);
+  font-size: 1.08rem;
+  background: var(--color-bg);
+  transition:
+    border-color 0.18s,
+    box-shadow 0.18s;
+  outline: none;
+}
+.add-form-row input[type='number']:focus {
+  border-color: var(--color-main);
+  box-shadow: 0 0 0 2px var(--color-main-light);
+}
+.add-form-row input[type='number'].error {
+  border-color: var(--color-danger) !important;
+  background: var(--color-danger-bg);
+}
+.toast {
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  min-width: 180px;
+  max-width: 320px;
+  background: #fff;
+  color: var(--color-main);
+  padding: 16px 28px;
+  border-radius: 16px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  box-shadow: 0 6px 32px var(--color-main-light);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--color-accent);
+  transform: translateX(40px);
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.home-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.right-title {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 0.01em;
+  background: #f3f6fd;
+  padding: 6px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.07);
+  display: inline-block;
+}
+
+.block-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0.5rem;
+}
+.validation-guide {
+  font-size: 1rem;
+  color: var(--color-accent);
+  background: var(--color-main-light);
+  border-radius: 7px;
+  font-weight: 600;
+  padding: 3px 14px;
+  box-shadow: 0 1px 4px var(--color-main-light);
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0.5rem 0 0.2rem 0;
+}
+
+#jsonEditor {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 1.08rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-bg);
+  resize: vertical;
+}
+
+.edit-error,
+.add-error,
+.json-error {
+  display: flex;
+  align-items: center;
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0 16px;
+  margin: 0;
+  min-height: 42px;
+  box-shadow: 0 2px 8px var(--color-danger-bg);
+  letter-spacing: 0.01em;
+  border: 1.5px solid #fca5a5;
+  line-height: 1.2;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1 1 0;
+}
+
+/* 값 편집 테이블 내 input 스타일 */
+.edit-table input[type='number'] {
+  width: 80px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1.5px solid var(--color-border);
+  font-size: 1.08rem;
+  background: var(--color-bg);
+  transition:
+    border-color 0.18s,
+    box-shadow 0.18s;
+  outline: none;
+}
+.edit-table input[type='number']:focus {
+  border-color: var(--color-main);
+  box-shadow: 0 0 0 2px var(--color-main-light);
+}
+/* 에러 발생 시 테두리 강조 */
+.edit-table input[type='number'].error {
+  border-color: var(--color-danger) !important;
+  background: var(--color-danger-bg);
+}
+
+/* number input의 스핀 버튼(화살표) 숨기기 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.empty-row {
+  color: var(--color-text-light);
+  background: var(--color-main-light);
+  text-align: center;
+  font-style: italic;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 1rem;
+  font-family: var(--font-family-main);
+  cursor: default;
+}
+
+.edit-table td.empty-row {
+  cursor: default;
+}
+
+.edit-table tbody {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+.edit-table thead,
+.edit-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background: #e0e0e0 !important;
+  color: #b0b0b0 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  border: none;
+  opacity: 1;
+  pointer-events: none;
+  transition: none;
+}
+
+.btn[disabled][data-tooltip] {
+  position: relative;
+  pointer-events: auto;
+}
+.btn[disabled][data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.13);
+  opacity: 1;
+  pointer-events: none;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 1.2s infinite linear;
+  border-radius: 8px;
+  display: inline-block;
+}
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

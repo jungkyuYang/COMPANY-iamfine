@@ -1,0 +1,53 @@
+@import './reset.css';
+@import './font.css';
+@import '../../index.css';
+
+:root {
+  /* 메인 컬러 계열 */
+  --color-main: #2563eb;
+  --color-main-dark: #1742a0;
+  --color-main-light: #eaf3ff;
+
+  /* 서브/포인트 컬러 */
+  --color-accent: #3182f6;
+
+  /* 경고/성공 */
+  --color-danger: #ef4444;
+  --color-danger-bg: #fff0f0;
+  --color-success: #2e8b57;
+
+  /* 텍스트/기본 */
+  --color-text: #222222;
+  --color-text-light: #444444;
+  --color-border: #b6d5fa;
+  --color-bg: #f8fbff;
+
+  /* 차트 */
+  --chart-bar-color: #2563eb40;
+  --chart-bar-border: #2563eb;
+  --chart-value-color-max: var(--color-danger);
+  --chart-value-color-min: var(--color-success);
+  --chart-axis-color: var(--color-text);
+
+  /* 기타 */
+  --chart-width: 400px;
+  --chart-height: 220px;
+  --chart-font: 1.2rem sans-serif;
+  --chart-font-bold: bold 1.4rem sans-serif;
+  --chart-value-text-margin: 5px;
+  --chart-bar-height-correction: 30px;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  background-color: var(--default-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

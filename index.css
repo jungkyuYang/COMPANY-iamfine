@@ -1,0 +1,5 @@
+@import './src/layout/Header.css';
+@import './src/pages/notfound/style.css';
+@import './src/components/Modal/Modal.css';
+@import './src/components/Toast/Toast.css';
+@import './src//pages/home/style.css';
