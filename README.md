@@ -1,5 +1,11 @@
 # 아이엠파인 SD팀 자바스크립트 개발자 면접 과제
 
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/0dbb3e1a-20b9-46fc-9c54-b407e2b9b024)
+
+</div>
+
 ## 개요
 
 이 프로젝트는 **순수 자바스크립트, HTML, CSS**만을 사용하여 인터랙티브 막대 차트 어플리케이션을 구현한 과제입니다.  
